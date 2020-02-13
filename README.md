@@ -14,6 +14,8 @@ of features:
 * PostCSS, with [autoprefixer](https://github.com/postcss/autoprefixer) &amp; [cssnano](https://cssnano.co/) included - easy to add additional plugins
 * Vendor assets - as an example, the design of the homepage uses [Bulma](https://bulma.io/)
 
+This repository is automatically published on Netlify at <a href="https://elevenpack.netlify.com/">https://elevenpack.netlify.com/</a>.
+
 Contributions are welcome!
 
 ## Usage
