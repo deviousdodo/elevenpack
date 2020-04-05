@@ -4,9 +4,14 @@ layout: default
 ---
 
 <div class="container">
-  <p>
-    This page uses <a href="https://bulma.io">Bulma</a>, to show off an example of using vendor
-    packages. In the likely event that you don't want it, delete the file from
-    <code>src/vendor</code> and adjust your <code>src/_includes/layout.njk</code>
+  <p class="leading-loose">
+    This starter pack uses the following PostCSS plugins:
   </p>
+  <ul class="ml-5">
+    <li><a class="text-teal-600" href="https://tailwindcss.com">TailwindCSS</a></li>
+    <li><a class="text-teal-600" href="https://github.com/postcss/autoprefixer">autoprefixer</a></li>
+    <li><a class="text-teal-600" href="https://purgecss.com/">PurgeCSS</a> (highly recommended with TailwindCSS)</li>
+    <li><a class="text-teal-600" href="https://cssnano.co/">cssnano</a></li>
+  </ul>
+  <p class="leading-loose">See postcss.config.js for customizations.</p>
 </div>

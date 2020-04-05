@@ -1,6 +1,6 @@
 # Elevenpack
 
-An [Eleventy](https://www.11ty.dev/) starter template that comes with [webpack](https://webpack.js.org/), [PostCSS](https://postcss.org/) and [Bulma](https://bulma.io/).
+An [Eleventy](https://www.11ty.dev) starter template that comes with [webpack](https://webpack.js.org), [PostCSS](https://postcss.org) and [Tailwind](https://tailwindcss.com).
 
 The focus is to have a minimal setup that allows you to generate a static website, while allowing
 modern JS &amp; CSS workflows and cache busting for production deployments. Here's a quick list
@@ -11,8 +11,8 @@ of features:
 * asset bundling through webpack
 * **cache busting** for production deployments
 * ES6 support through Babel
-* PostCSS, with [autoprefixer](https://github.com/postcss/autoprefixer) &amp; [cssnano](https://cssnano.co/) included - easy to add additional plugins
-* Vendor assets - as an example, the design of the homepage uses [Bulma](https://bulma.io/)
+* PostCSS, with Tailwind, [autoprefixer](https://github.com/postcss/autoprefixer), PurgeCSS &amp; [cssnano](https://cssnano.co/) included - easy to add additional plugins
+* Vendor assets: anything in the src/vendor folder will be copied through to the output folder.
 
 This repository is automatically published on Netlify at <a href="https://elevenpack.netlify.com/">https://elevenpack.netlify.com/</a>.
 
@@ -37,7 +37,7 @@ Everything in `src/site` will be converted by Eleventy - this is the input folde
 The `src/img` and `src/vendor` folders will be copied verbatim and you can reference any file by using the direct path, eg.
 ```
 <img src="/img/example.png">
-<link rel="stylesheet" href="/vendor/bulma.min.css">
+<link rel="stylesheet" href="/vendor/example.min.css">
 ```
 The `src/vendor` folder is meant for external assets that you don't want to bundle (because they change rarely compared to your own source or for performance reasons).
 
