@@ -2,11 +2,12 @@ const path = require("path");
 const ManifestPlugin = require("webpack-manifest-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const isDev = process.env.APP_ENV === "development";
+const isDev = process.env.NODE_ENV === "development";
 
 const baseFilename = isDev ? "index" : "index.[contenthash]";
 
 module.exports = {
+  mode: isDev ? "development" : "production",
   entry: [
     path.resolve(__dirname, "src", "js", "index.js"),
     path.resolve(__dirname, "src", "css", "index.css"),
@@ -33,6 +34,7 @@ module.exports = {
       },
     ],
   },
+  devtool: isDev ? "eval" : "source-map",
   plugins: [
     new MiniCssExtractPlugin({ filename: `${baseFilename}.css` }),
     new ManifestPlugin({ publicPath: "/assets/" }),
