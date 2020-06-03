@@ -4,14 +4,17 @@ layout: default
 ---
 
 <div class="container">
-  <p class="leading-loose">
-    This starter pack uses the following PostCSS plugins:
+  <p>
+    This page is generated from the template <span class="code">src/site/index.njk</span>, using the default layout
+    <span class="code">src/site/_includes/layouts/default.njk</span>.
   </p>
-  <ul class="ml-5">
-    <li><a class="text-teal-600" href="https://tailwindcss.com">TailwindCSS</a></li>
-    <li><a class="text-teal-600" href="https://github.com/postcss/autoprefixer">autoprefixer</a></li>
-    <li><a class="text-teal-600" href="https://purgecss.com/">PurgeCSS</a> (highly recommended with TailwindCSS)</li>
-    <li><a class="text-teal-600" href="https://cssnano.co/">cssnano</a></li>
-  </ul>
-  <p class="leading-loose">See postcss.config.js for customizations.</p>
+  <p class="my-4">
+    Styles can be found under <span class="code">src/css</span> and the javascript under <span class="code">src/js</span>.
+    The <span class="code">src/vendor</span> folder will be copied verbatim when building the website and is meant for any
+    external dependencies that you don't want to add to your build process.
+  </p>
+  <p class="my-4">Any images should be placed under <span class="code">src/img</span> and this folder will be copied verbatim when building.</p>
+  <p>If you want to change Eleventy's configuration in any way, see <span class="code">.eleventy.js</span>.
+
+  <h3 class="mt-8 text-lg">Check out the <a href="https://github.com/deviousdodo/elevenpack#elevenpack" class="text-teal-600">README</a> for more docs.</h3>
 </div>

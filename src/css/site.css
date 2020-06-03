@@ -1,0 +1,8 @@
+/* Your custom CSS comes right here */
+.container {
+  @apply max-w-xl mx-auto;
+}
+
+.code {
+  @apply font-mono text-purple-500;
+}

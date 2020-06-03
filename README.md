@@ -1,17 +1,18 @@
 # Elevenpack
 
-An [Eleventy](https://www.11ty.dev) starter template that comes with [webpack](https://webpack.js.org), [PostCSS](https://postcss.org) and [Tailwind](https://tailwindcss.com).
+Get started quickly with [Eleventy](https://www.11ty.dev), while using modern JS & CSS workflows.
+Tools used: [webpack](https://webpack.js.org), [babel](https://babeljs.io/), [PostCSS](https://postcss.org) and [Tailwind](https://tailwindcss.com).
 
-The focus is to have a minimal setup that allows you to generate a static website, while allowing
-modern JS &amp; CSS workflows and cache busting for production deployments. Here's a quick list
-of features:
+The focus is to have a minimal setup that allows modern JS &amp; CSS features and a performant build output, with bundling and cache busting for the assets.
+Here's a quick list of features:
 
-* standard structure for new projects
-* basic initial layout
-* asset bundling through webpack
+* standard structure for new projects (check out the `src` folder)
+* basic initial layout (`src/site/_includes/layouts/default.njk`)
+* JS & CSS bundling through webpack
 * **cache busting** for production deployments
-* ES6 support through Babel
-* PostCSS, with Tailwind, [autoprefixer](https://github.com/postcss/autoprefixer), PurgeCSS &amp; [cssnano](https://cssnano.co/) included - easy to add additional plugins
+* modern JS support through Babel
+* modern CSS support through PostCSS (`postcss-import`, `postcss-preset-env` and `cssnano` plugins included)
+* the Tailwind library is included by default
 * Vendor assets: anything in the src/vendor folder will be copied through to the output folder.
 
 This repository is automatically published on Netlify at <a href="https://elevenpack.netlify.com/">https://elevenpack.netlify.com/</a>.
